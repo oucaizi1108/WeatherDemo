@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B0CFA1B86C9C88364585F4E /* libPods-Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA30B533302B7DC4BCAC9B34 /* libPods-Weather.a */; };
+		E8D399701F1FA004005A61A4 /* BaseApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3996C1F1FA004005A61A4 /* BaseApiModel.m */; };
+		E8D399711F1FA004005A61A4 /* BaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3996F1F1FA004005A61A4 /* BaseFactory.m */; };
 		E8DBD8D91F1F930B00F81801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8D81F1F930B00F81801 /* main.m */; };
 		E8DBD8DC1F1F930B00F81801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8DB1F1F930B00F81801 /* AppDelegate.m */; };
 		E8DBD8DF1F1F930B00F81801 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8DE1F1F930B00F81801 /* ViewController.m */; };
@@ -29,6 +31,11 @@
 		1D0DC8DCB15CA336450F054E /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		2A4E6C1EB5A1398C1182797A /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 		DA30B533302B7DC4BCAC9B34 /* libPods-Weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D3996B1F1FA004005A61A4 /* BaseApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApiModel.h; sourceTree = "<group>"; };
+		E8D3996C1F1FA004005A61A4 /* BaseApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApiModel.m; sourceTree = "<group>"; };
+		E8D3996E1F1FA004005A61A4 /* BaseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFactory.h; sourceTree = "<group>"; };
+		E8D3996F1F1FA004005A61A4 /* BaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFactory.m; sourceTree = "<group>"; };
+		E8D399721F1FA085005A61A4 /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 		E8DBD8D41F1F930B00F81801 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DBD8D81F1F930B00F81801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8DBD8DA1F1F930B00F81801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +85,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E8D399691F1FA004005A61A4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E8D3996A1F1FA004005A61A4 /* BaseApiModel */,
+				E8D3996D1F1FA004005A61A4 /* BaseFactory */,
+			);
+			path = Base;
+			sourceTree = SOURCE_ROOT;
+		};
+		E8D3996A1F1FA004005A61A4 /* BaseApiModel */ = {
+			isa = PBXGroup;
+			children = (
+				E8D3996B1F1FA004005A61A4 /* BaseApiModel.h */,
+				E8D3996C1F1FA004005A61A4 /* BaseApiModel.m */,
+			);
+			path = BaseApiModel;
+			sourceTree = "<group>";
+		};
+		E8D3996D1F1FA004005A61A4 /* BaseFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E8D3996E1F1FA004005A61A4 /* BaseFactory.h */,
+				E8D3996F1F1FA004005A61A4 /* BaseFactory.m */,
+			);
+			path = BaseFactory;
+			sourceTree = "<group>";
+		};
 		E8DBD8CB1F1F930B00F81801 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +135,8 @@
 		E8DBD8D61F1F930B00F81801 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				E8D399691F1FA004005A61A4 /* Base */,
+				E8D399721F1FA085005A61A4 /* CommonHeader.h */,
 				E8DBD8DA1F1F930B00F81801 /* AppDelegate.h */,
 				E8DBD8DB1F1F930B00F81801 /* AppDelegate.m */,
 				E8DBD8DD1F1F930B00F81801 /* ViewController.h */,
@@ -286,6 +322,8 @@
 				E8DBD8DF1F1F930B00F81801 /* ViewController.m in Sources */,
 				E8DBD8DC1F1F930B00F81801 /* AppDelegate.m in Sources */,
 				E8DBD8D91F1F930B00F81801 /* main.m in Sources */,
+				E8D399701F1FA004005A61A4 /* BaseApiModel.m in Sources */,
+				E8D399711F1FA004005A61A4 /* BaseFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +505,7 @@
 				E8DBD8F81F1F930C00F81801 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8DBD8F91F1F930C00F81801 /* Build configuration list for PBXNativeTarget "WeatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +514,7 @@
 				E8DBD8FB1F1F930C00F81801 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
