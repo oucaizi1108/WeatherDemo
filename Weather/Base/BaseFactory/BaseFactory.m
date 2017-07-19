@@ -54,12 +54,10 @@
                              target:(id)target action:(SEL)aSelect autoLayout:(BOOL)autoLayout
 {
     UIButton *button  = [UIButton buttonWithType:UIButtonTypeCustom];
-    //    if (title) {
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:titleColor forState:UIControlStateNormal];
     [button setTitleColor:[titleColor colorWithAlphaComponent:0.3] forState:UIControlStateHighlighted];
     [button.titleLabel setFont:[UIFont systemFontOfSize:fontSize]];
-    //    }
     
     if (normalImage) {
         [button setImage:normalImage forState:UIControlStateNormal];

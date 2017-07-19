@@ -10,18 +10,6 @@
 
 @implementation BaseApiModel
 
-+ (BOOL)propertyIsOptional:(NSString *)propertyName
-{
-    return YES;
-}
-
-+ (instancetype)mockInstance;
-{
-    NSAssert(NO, @"需要子类继承并实现");
-    
-    return nil;
-}
-
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"%@", [self toDictionary]];

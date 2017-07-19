@@ -7,10 +7,8 @@
 //
 
 #import <JSONModel/JSONModel.h>
-#import <JSONModel/JSONModel.h>
 
 @interface BaseApiModel : JSONModel
 
-+ (instancetype)mockInstance;
 
 @end

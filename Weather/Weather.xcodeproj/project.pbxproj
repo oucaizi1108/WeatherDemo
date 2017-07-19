@@ -10,6 +10,8 @@
 		1B0CFA1B86C9C88364585F4E /* libPods-Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA30B533302B7DC4BCAC9B34 /* libPods-Weather.a */; };
 		E8D399701F1FA004005A61A4 /* BaseApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3996C1F1FA004005A61A4 /* BaseApiModel.m */; };
 		E8D399711F1FA004005A61A4 /* BaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3996F1F1FA004005A61A4 /* BaseFactory.m */; };
+		E8D399781F1FA198005A61A4 /* CitySelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D399751F1FA198005A61A4 /* CitySelectItem.m */; };
+		E8D399791F1FA198005A61A4 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D399771F1FA198005A61A4 /* WeatherModel.m */; };
 		E8DBD8D91F1F930B00F81801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8D81F1F930B00F81801 /* main.m */; };
 		E8DBD8DC1F1F930B00F81801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8DB1F1F930B00F81801 /* AppDelegate.m */; };
 		E8DBD8DF1F1F930B00F81801 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8DE1F1F930B00F81801 /* ViewController.m */; };
@@ -36,6 +38,10 @@
 		E8D3996E1F1FA004005A61A4 /* BaseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFactory.h; sourceTree = "<group>"; };
 		E8D3996F1F1FA004005A61A4 /* BaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFactory.m; sourceTree = "<group>"; };
 		E8D399721F1FA085005A61A4 /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		E8D399741F1FA198005A61A4 /* CitySelectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySelectItem.h; sourceTree = "<group>"; };
+		E8D399751F1FA198005A61A4 /* CitySelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySelectItem.m; sourceTree = "<group>"; };
+		E8D399761F1FA198005A61A4 /* WeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
+		E8D399771F1FA198005A61A4 /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
 		E8DBD8D41F1F930B00F81801 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DBD8D81F1F930B00F81801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8DBD8DA1F1F930B00F81801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +118,17 @@
 			path = BaseFactory;
 			sourceTree = "<group>";
 		};
+		E8D399731F1FA198005A61A4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E8D399741F1FA198005A61A4 /* CitySelectItem.h */,
+				E8D399751F1FA198005A61A4 /* CitySelectItem.m */,
+				E8D399761F1FA198005A61A4 /* WeatherModel.h */,
+				E8D399771F1FA198005A61A4 /* WeatherModel.m */,
+			);
+			path = model;
+			sourceTree = SOURCE_ROOT;
+		};
 		E8DBD8CB1F1F930B00F81801 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				E8D399691F1FA004005A61A4 /* Base */,
+				E8D399731F1FA198005A61A4 /* model */,
 				E8D399721F1FA085005A61A4 /* CommonHeader.h */,
 				E8DBD8DA1F1F930B00F81801 /* AppDelegate.h */,
 				E8DBD8DB1F1F930B00F81801 /* AppDelegate.m */,
@@ -320,9 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8DBD8DF1F1F930B00F81801 /* ViewController.m in Sources */,
+				E8D399781F1FA198005A61A4 /* CitySelectItem.m in Sources */,
 				E8DBD8DC1F1F930B00F81801 /* AppDelegate.m in Sources */,
 				E8DBD8D91F1F930B00F81801 /* main.m in Sources */,
 				E8D399701F1FA004005A61A4 /* BaseApiModel.m in Sources */,
+				E8D399791F1FA198005A61A4 /* WeatherModel.m in Sources */,
 				E8D399711F1FA004005A61A4 /* BaseFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
