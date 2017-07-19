@@ -15,6 +15,7 @@
 		E8D399811F1FB24F005A61A4 /* CheckListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3997C1F1FB24F005A61A4 /* CheckListCell.m */; };
 		E8D399821F1FB24F005A61A4 /* CityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3997E1F1FB24F005A61A4 /* CityListView.m */; };
 		E8D399831F1FB24F005A61A4 /* WeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D399801F1FB24F005A61A4 /* WeatherCell.m */; };
+		E8D399851F1FB571005A61A4 /* CityListEntity.json in Resources */ = {isa = PBXBuildFile; fileRef = E8D399841F1FB571005A61A4 /* CityListEntity.json */; };
 		E8DBD8D91F1F930B00F81801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8D81F1F930B00F81801 /* main.m */; };
 		E8DBD8DC1F1F930B00F81801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8DB1F1F930B00F81801 /* AppDelegate.m */; };
 		E8DBD8DF1F1F930B00F81801 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8DE1F1F930B00F81801 /* ViewController.m */; };
@@ -51,6 +52,7 @@
 		E8D3997E1F1FB24F005A61A4 /* CityListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListView.m; sourceTree = "<group>"; };
 		E8D3997F1F1FB24F005A61A4 /* WeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCell.h; sourceTree = "<group>"; };
 		E8D399801F1FB24F005A61A4 /* WeatherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCell.m; sourceTree = "<group>"; };
+		E8D399841F1FB571005A61A4 /* CityListEntity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CityListEntity.json; sourceTree = "<group>"; };
 		E8DBD8D41F1F930B00F81801 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DBD8D81F1F930B00F81801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8DBD8DA1F1F930B00F81801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				E8DBD8DB1F1F930B00F81801 /* AppDelegate.m */,
 				E8DBD8DD1F1F930B00F81801 /* ViewController.h */,
 				E8DBD8DE1F1F930B00F81801 /* ViewController.m */,
+				E8D399841F1FB571005A61A4 /* CityListEntity.json */,
 				E8DBD8E31F1F930B00F81801 /* Assets.xcassets */,
 				E8DBD8E81F1F930B00F81801 /* Info.plist */,
 				E8DBD8D71F1F930B00F81801 /* Supporting Files */,
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8DBD8E41F1F930B00F81801 /* Assets.xcassets in Resources */,
+				E8D399851F1FB571005A61A4 /* CityListEntity.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,9 +12,8 @@
 
 @interface CheckListCell ()
 
-@property (nonatomic, strong) UILabel       *titleLa;
-@property (nonatomic, assign) BOOL          isSelected;
-
+@property (nonatomic, strong) UILabel   *titleLa;
+@property (nonatomic, assign) BOOL      isSelected;
 
 @end
 
@@ -41,7 +40,6 @@
     [self.contentView addSubview:self.titleLa];
     
     [self addSubviewsContraints];
-
 }
 
 - (void)addSubviewsContraints
