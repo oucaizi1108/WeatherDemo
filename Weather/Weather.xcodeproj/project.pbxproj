@@ -12,6 +12,9 @@
 		E8D399711F1FA004005A61A4 /* BaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3996F1F1FA004005A61A4 /* BaseFactory.m */; };
 		E8D399781F1FA198005A61A4 /* CitySelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D399751F1FA198005A61A4 /* CitySelectItem.m */; };
 		E8D399791F1FA198005A61A4 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D399771F1FA198005A61A4 /* WeatherModel.m */; };
+		E8D399811F1FB24F005A61A4 /* CheckListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3997C1F1FB24F005A61A4 /* CheckListCell.m */; };
+		E8D399821F1FB24F005A61A4 /* CityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3997E1F1FB24F005A61A4 /* CityListView.m */; };
+		E8D399831F1FB24F005A61A4 /* WeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D399801F1FB24F005A61A4 /* WeatherCell.m */; };
 		E8DBD8D91F1F930B00F81801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8D81F1F930B00F81801 /* main.m */; };
 		E8DBD8DC1F1F930B00F81801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8DB1F1F930B00F81801 /* AppDelegate.m */; };
 		E8DBD8DF1F1F930B00F81801 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD8DE1F1F930B00F81801 /* ViewController.m */; };
@@ -42,6 +45,12 @@
 		E8D399751F1FA198005A61A4 /* CitySelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySelectItem.m; sourceTree = "<group>"; };
 		E8D399761F1FA198005A61A4 /* WeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
 		E8D399771F1FA198005A61A4 /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
+		E8D3997B1F1FB24F005A61A4 /* CheckListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListCell.h; sourceTree = "<group>"; };
+		E8D3997C1F1FB24F005A61A4 /* CheckListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListCell.m; sourceTree = "<group>"; };
+		E8D3997D1F1FB24F005A61A4 /* CityListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListView.h; sourceTree = "<group>"; };
+		E8D3997E1F1FB24F005A61A4 /* CityListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListView.m; sourceTree = "<group>"; };
+		E8D3997F1F1FB24F005A61A4 /* WeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCell.h; sourceTree = "<group>"; };
+		E8D399801F1FB24F005A61A4 /* WeatherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCell.m; sourceTree = "<group>"; };
 		E8DBD8D41F1F930B00F81801 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DBD8D81F1F930B00F81801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8DBD8DA1F1F930B00F81801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +138,19 @@
 			path = model;
 			sourceTree = SOURCE_ROOT;
 		};
+		E8D3997A1F1FB24F005A61A4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E8D3997B1F1FB24F005A61A4 /* CheckListCell.h */,
+				E8D3997C1F1FB24F005A61A4 /* CheckListCell.m */,
+				E8D3997D1F1FB24F005A61A4 /* CityListView.h */,
+				E8D3997E1F1FB24F005A61A4 /* CityListView.m */,
+				E8D3997F1F1FB24F005A61A4 /* WeatherCell.h */,
+				E8D399801F1FB24F005A61A4 /* WeatherCell.m */,
+			);
+			path = view;
+			sourceTree = SOURCE_ROOT;
+		};
 		E8DBD8CB1F1F930B00F81801 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +176,7 @@
 			children = (
 				E8D399691F1FA004005A61A4 /* Base */,
 				E8D399731F1FA198005A61A4 /* model */,
+				E8D3997A1F1FB24F005A61A4 /* view */,
 				E8D399721F1FA085005A61A4 /* CommonHeader.h */,
 				E8DBD8DA1F1F930B00F81801 /* AppDelegate.h */,
 				E8DBD8DB1F1F930B00F81801 /* AppDelegate.m */,
@@ -339,8 +362,11 @@
 			files = (
 				E8DBD8DF1F1F930B00F81801 /* ViewController.m in Sources */,
 				E8D399781F1FA198005A61A4 /* CitySelectItem.m in Sources */,
+				E8D399831F1FB24F005A61A4 /* WeatherCell.m in Sources */,
 				E8DBD8DC1F1F930B00F81801 /* AppDelegate.m in Sources */,
+				E8D399821F1FB24F005A61A4 /* CityListView.m in Sources */,
 				E8DBD8D91F1F930B00F81801 /* main.m in Sources */,
+				E8D399811F1FB24F005A61A4 /* CheckListCell.m in Sources */,
 				E8D399701F1FA004005A61A4 /* BaseApiModel.m in Sources */,
 				E8D399791F1FA198005A61A4 /* WeatherModel.m in Sources */,
 				E8D399711F1FA004005A61A4 /* BaseFactory.m in Sources */,

@@ -10,5 +10,4 @@
 
 @interface BaseApiModel : JSONModel
 
-
 @end
