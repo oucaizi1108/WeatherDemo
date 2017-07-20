@@ -18,7 +18,7 @@
 #define HTTP_REQUSET_POST   @"POST"
 #define HTTP_REQUSET_PUT    @"PUT"
 #define HTTP_REQUSET_DELET  @"DELETE"
-#define AUTHKEY             @"1e90bcf9b5eb49d49c2932e455074ff9"
+#define AUTHKEY             @"1e90bcf9b5eb49d49c2932e455074ff"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource,UITextFieldDelegate,UIGestureRecognizerDelegate,CityListViewDelegate>
 
@@ -264,6 +264,11 @@
         NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         NSLog(@"%ld-----%@\nbody:\n%@\n", urlResponse.statusCode, strongSelf.apiHost, jsonString);
         
+        // authkey错误或该authkey过期 做下简单的判断处理
+        if ([responseObject[@"status"] isEqual:@(401)])
+        {
+           return; 
+        }
         WeatherModel *model = [[WeatherModel alloc] initWithDictionary:responseObject[@"data"] error:nil];
         
         [strongSelf.dataSource addObject:model];
