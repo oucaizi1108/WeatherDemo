@@ -267,8 +267,27 @@
         // authkey错误或该authkey过期 做下简单的判断处理
         if ([responseObject[@"status"] isEqual:@(401)])
         {
-           return; 
+           NSDictionary *dataDict =  @{
+                @"prov": @"北京",
+                @"city":@"北京",
+                @"district": @"海淀",
+                @"dateTime": @"2015年2月27日",
+                @"temp": @"2℃",
+                @"minTemp": @"-2℃",
+                @"maxTemp": @"3℃",
+                @"weather": @"阴转小雪",
+                @"windDirection": @"西南风",
+                @"windForce": @"1级",
+                @"humidity": @"35%",
+                @"img_1": @"2",
+                @"img_2": @"14",
+                @"refreshTime": @"14:50"
+           };
+           
+            responseObject[@"data"] = dataDict;
+            self.textField.text = @"authkey过期,无权访问此接口,测试数据";
         }
+        
         WeatherModel *model = [[WeatherModel alloc] initWithDictionary:responseObject[@"data"] error:nil];
         
         [strongSelf.dataSource addObject:model];
